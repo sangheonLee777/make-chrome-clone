@@ -11,14 +11,14 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings (username) {
-  greeting.classList.remove("hidden");
   greeting.innerText = `hello ${username}`;
+  greeting.classList.remove("hidden");
 }
 
-loginForm.addEventListener("submit", onLoginSubmit)
+// loginForm.addEventListener("submit", onLoginSubmit)
 
 const savedUsername= localStorage.getItem("username");
-console.log(savedUsername);
+// console.log(savedUsername);
 
 if(savedUsername===null) {
   loginForm.classList.remove("hidden");
