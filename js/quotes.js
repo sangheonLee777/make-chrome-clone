@@ -1,5 +1,4 @@
-const quotes = [
-  {
+const quotes = [{
     quote: "asdf",
     author: "이상헌",
   },
@@ -53,9 +52,5 @@ const quotes = [
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * 10)];
-
 quote.innerText = todaysQuote.quote;
 author.innerText = todaysQuote.author;
-
-
-
